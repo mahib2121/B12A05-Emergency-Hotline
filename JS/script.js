@@ -48,6 +48,67 @@ increment8.onclick = function () {
     defaultCnt.textContent = conut;
 }
 
+// calling function 
+document.addEventListener("DOMContentLoaded", function () {
+    var coinSpan = document.getElementById("coinCount");
+    var coins = parseInt(coinSpan.textContent, 10) || 100;
+
+    var historyContainer = document.querySelector(".space-y-5");
+
+    document.querySelectorAll(".CallBtn").forEach(function (btn) {
+        btn.addEventListener("click", function () {
+            if (coins < 20) {
+                alert("Not enough coins to make a call.");
+                return;
+            }
+
+            let card = btn.closest(".card");
+            let name = card.querySelector("p.font-semibold").innerText;
+            let number = card.querySelector(".text-4xl").innerText;
+
+            alert("Calling " + name + " at " + number);
+
+            coins -= 20;
+            coinSpan.textContent = coins;
+
+            let now = new Date();
+            let time = now.toLocaleTimeString();
+
+            var historyItem = document.createElement("div");
+            historyItem.className = "flex justify-between items-center text-sm";
+            historyItem.innerHTML = `
+                <div>
+                    <p class="font-semibold">${name}</p>
+                    <p class="text-gray-500">${number}</p>
+                </div>
+                <p class="text-gray-400 text-xs">${time}</p>
+            `;
+            historyContainer.prepend(historyItem);
+        });
+    });
+
+    document.getElementById("clearHistoryBtn").addEventListener("click", function () {
+        historyContainer.innerHTML = "";
+    });
+
+});
+
+
+// copy btn 
+function copyNumber(btn) {
+    const card = btn.closest(".card");
+    const number = card.querySelector(".text-4xl").innerText.trim();
+    navigator.clipboard.writeText(number)
+        .then(function () { alert(`copied to clipboard`) })
+
+}
+
+document.querySelectorAll(".copyBtn").forEach(btn => {
+    btn.addEventListener("click", function () {
+        copyNumber(btn)
+    });
+});
+
 
 
 
