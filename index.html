@@ -30,13 +30,13 @@
         <div class="flex items-center space-x-3">
             <!-- Heart -->
             <div class="flex items-center space-x-1 bg-green-50 px-3 py-1 rounded-full">
-                <span class="text-sm font-semibold text-gray-700">0</span>
+                <span class="text-sm font-semibold text-gray-700"> <span id="defaultCnt">0</span></span>
                 <span class="text-red-500 text-lg"><img src="./assets/heart.png" alt="" class="h-5 w-5"></span>
             </div>
 
             <!-- Coin -->
             <div class="flex items-center space-x-1 bg-green-50 px-3 py-1 rounded-full">
-                <span class="text-sm font-semibold text-gray-700">100</span>
+                <span class="text-sm font-semibold text-gray-700" id="coinCount"> 100</span>
                 <span class="text-yellow-500 text-lg"><img src="./assets/coin.png" alt="" class="h-5 w-5"></span>
             </div>
 
@@ -75,19 +75,24 @@
                                 <img src="./assets/emergency.png" alt="" class="h-6 w-6">
                             </div>
                             <button class="btn btn-ghost btn-circle btn-sm">
-                                <span><i class="fa-regular fa-heart"></i></span>
+
+                                <span> <i class="fa-regular fa-heart" id="heart_BTN"></i> </span>
+
                             </button>
                         </div>
-                        <p class="font-semibold text-lg">National Emergency Number</p>
+                        <p class="font-semibold text-lg" id="NEN">National Emergency Number</p>
                         <p class="text-gray-500 text-sm">National Emergency</p>
-                        <h2 class="text-4xl font-bold my-2">999</h2>
+                        <p class="text-4xl font-bold my-2" id="Number">999</p>
                         <div class="badge badge-outline mt-1">All</div>
                     </div>
                     <div class="mt-6 flex gap-4">
                         <button class="btn btn-outline flex-1 normal-case font-normal rounded-lg"> <span><i
                                     class="fa-regular fa-clone"></i></span>Copy</button>
-                        <button class="btn btn-success text-white flex-1 normal-case font-normal rounded-lg"> <span><i
-                                    class="fa-solid fa-phone"></i></span>Call</button>
+                        <button class="btn btn-success text-white flex-1 normal-case font-normal rounded-lg CallBtn">
+                            <span><i class="fa-solid fa-phone"></i></span>
+                            Call
+                        </button>
+
                     </div>
                 </div>
                 <!-- Card 2 -->
@@ -98,19 +103,19 @@
                                 <img src="./assets/police.png" alt="" class="h-6 w-6">
                             </div>
                             <button class="btn btn-ghost btn-circle btn-sm">
-                                <span><i class="fa-regular fa-heart"></i></span>
+                                <span><i class="fa-regular fa-heart" id="heart_BTN1"></i></span>
                             </button>
                         </div>
-                        <p class="font-semibold text-lg">Police Helpline Number</p>
+                        <p class="font-semibold text-lg" id="NEN2">Police Helpline Number</p>
                         <p class="text-gray-500 text-sm">Police </p>
-                        <h2 class="text-4xl font-bold my-2">999</h2>
+                        <h2 class="text-4xl font-bold my-2" id="Number2">999</h2>
                         <div class="badge badge-outline mt-1">Police</div>
                     </div>
                     <div class="mt-6 flex gap-4">
                         <button class="btn btn-outline flex-1 normal-case font-normal rounded-lg"> <span><i
                                     class="fa-regular fa-clone"></i></span>Copy</button>
-                        <button class="btn btn-success text-white flex-1 normal-case font-normal rounded-lg"> <span><i
-                                    class="fa-solid fa-phone"></i></span>Call</button>
+                        <button class="btn btn-success text-white flex-1 normal-case font-normal rounded-lg CallBtn">
+                            <span><i class="fa-solid fa-phone"></i></span>Call</button>
                     </div>
                 </div>
                 <!-- card 3 -->
@@ -121,20 +126,21 @@
                                 <img src="./assets/fire-service.png" alt="" class="h-6 w-6">
                             </div>
                             <button class="btn btn-ghost btn-circle btn-sm">
-                                <span><i class="fa-regular fa-heart"></i></span>
+                                <span><i class="fa-regular fa-heart" id="heart_BTN2"></i></span>
                             </button>
                         </div>
-                        <p class="font-semibold text-lg">Fire Service Number</p>
+                        <p class="font-semibold text-lg" id="NEN3">Fire Service Number</p>
                         <p class="text-gray-500 text-sm">Fire Service</p>
-                        <h2 class="text-4xl font-bold my-2">999</h2>
+                        <h2 class="text-4xl font-bold my-2" id="Number3">999</h2>
                         <div class="badge badge-outline mt-1">Fire</div>
                     </div>
                     <div class="mt-6 flex gap-4">
                         <button class="btn btn-outline flex-1 normal-case font-normal rounded-lg"> <span><i
                                     class="fa-regular fa-clone"></i></span>Copy</button>
-                        <button class="btn btn-success text-white flex-1 normal-case font-normal rounded-lg"> <span><i
-                                    class="fa-solid fa-phone"></i></span>Call</button>
+                        <button class="btn btn-success text-white flex-1 normal-case font-normal rounded-lg CallBtn">
+                            <span><i class="fa-solid fa-phone"></i></span>Call</button>
                     </div>
+
                 </div>
                 <!-- card 4 -->
                 <div class="card bg-base-100 shadow-md rounded-2xl p-6 flex flex-col justify-between">
@@ -144,20 +150,24 @@
                                 <img src="./assets/ambulance.png" alt="" class="h-6 w-6">
                             </div>
                             <button class="btn btn-ghost btn-circle btn-sm">
-                                <span><i class="fa-regular fa-heart"></i></span>
+                                <span><i class="fa-regular fa-heart" id="heart_BTN3"></i></span>
                             </button>
                         </div>
-                        <p class="font-semibold text-lg">Ambulance Service</p>
+                        <p class="font-semibold text-lg" id="NEN4">Ambulance Service</p>
                         <p class="text-gray-500 text-sm">Ambulance</p>
-                        <h2 class="text-4xl font-bold my-2">1994-999999</h2>
+                        <h2 class="text-4xl font-bold my-2" id="Number4">1994-999999</h2>
                         <div class="badge badge-outline mt-1">Health</div>
                     </div>
                     <div class="mt-6 flex gap-4">
                         <button class="btn btn-outline flex-1 normal-case font-normal rounded-lg"> <span><i
                                     class="fa-regular fa-clone"></i></span>Copy</button>
-                        <button class="btn btn-success text-white flex-1 normal-case font-normal rounded-lg"> <span><i
-                                    class="fa-solid fa-phone"></i></span>Call</button>
+                        <button class="btn btn-success text-white flex-1 normal-case font-normal rounded-lg CallBtn">
+                            <span><i class="fa-solid fa-phone"></i></span>
+                            Call
+                        </button>
+
                     </div>
+                    <!-- id="CallBtn4" -->
                 </div>
                 <!-- card 5 -->
                 <div class="card bg-base-100 shadow-md rounded-2xl p-6 flex flex-col justify-between">
@@ -167,20 +177,21 @@
                                 <img src="./assets/emergency.png" alt="" class="h-6 w-6">
                             </div>
                             <button class="btn btn-ghost btn-circle btn-sm">
-                                <span><i class="fa-regular fa-heart"></i></span>
+                                <span><i class="fa-regular fa-heart" id="heart_BTN4"> </i></span>
                             </button>
                         </div>
-                        <p class="font-semibold text-lg">Women & Child Helpline</p>
+                        <p class="font-semibold text-lg" id="NEN5">Women & Child Helpline</p>
                         <p class="text-gray-500 text-sm">Women & Child Helpline</p>
-                        <h2 class="text-4xl font-bold my-2">109</h2>
+                        <h2 class="text-4xl font-bold my-2" id="Number5">109</h2>
                         <div class="badge badge-outline mt-1">Help</div>
                     </div>
                     <div class="mt-6 flex gap-4">
                         <button class="btn btn-outline flex-1 normal-case font-normal rounded-lg"> <span><i
                                     class="fa-regular fa-clone"></i></span>Copy</button>
-                        <button class="btn btn-success text-white flex-1 normal-case font-normal rounded-lg"> <span><i
-                                    class="fa-solid fa-phone"></i></span>Call</button>
+                        <button class="btn btn-success text-white flex-1 normal-case font-normal rounded-lg CallBtn">
+                            <span><i class="fa-solid fa-phone"></i></span>Call</button>
                     </div>
+                    <!-- id="CallBtn5" -->
                 </div>
                 <!-- card6 -->
                 <div class="card bg-base-100 shadow-md rounded-2xl p-6 flex flex-col justify-between">
@@ -190,20 +201,21 @@
                                 <img src="./assets/emergency.png" alt="" class="h-6 w-6">
                             </div>
                             <button class="btn btn-ghost btn-circle btn-sm">
-                                <span><i class="fa-regular fa-heart"></i></span>
+                                <span><i class="fa-regular fa-heart" id="heart_BTN5"></i></span>
                             </button>
                         </div>
-                        <p class="font-semibold text-lg">Anti-Corruption Helpline</p>
+                        <p class="font-semibold text-lg" id="Number6">Anti-Corruption Helpline</p>
                         <p class="text-gray-500 text-sm">Anti-Corruption</p>
-                        <h2 class="text-4xl font-bold my-2">106</h2>
+                        <h2 class="text-4xl font-bold my-2" id="NEN6">106</h2>
                         <div class="badge badge-outline mt-1">Govt.</div>
                     </div>
                     <div class="mt-6 flex gap-4">
                         <button class="btn btn-outline flex-1 normal-case font-normal rounded-lg"> <span><i
                                     class="fa-regular fa-clone"></i></span>Copy</button>
-                        <button class="btn btn-success text-white flex-1 normal-case font-normal rounded-lg"> <span><i
-                                    class="fa-solid fa-phone"></i></span>Call</button>
+                        <button class="btn btn-success text-white flex-1 normal-case font-normal rounded-lg CallBtn">
+                            <span><i class="fa-solid fa-phone"></i></span>Call</button>
                     </div>
+                    <!-- id="CallBtn6" -->
                 </div>
                 <!-- card7 -->
                 <div class="card bg-base-100 shadow-md rounded-2xl p-6 flex flex-col justify-between">
@@ -213,19 +225,19 @@
                                 <img src="./assets/emergency.png" alt="" class="h-6 w-6">
                             </div>
                             <button class="btn btn-ghost btn-circle btn-sm">
-                                <span><i class="fa-regular fa-heart"></i></span>
+                                <span><i class="fa-regular fa-heart" id="heart_BTN6"></i></span>
                             </button>
                         </div>
-                        <p class="font-semibold text-lg">Electricity Helpline</p>
+                        <p class="font-semibold text-lg" id="NEN7">Electricity Helpline</p>
                         <p class="text-gray-500 text-sm">Electricity Outage</p>
-                        <h2 class="text-4xl font-bold my-2">16216</h2>
+                        <h2 class="text-4xl font-bold my-2" id="Number7">16216</h2>
                         <div class="badge badge-outline mt-1">Electricity</div>
                     </div>
                     <div class="mt-6 flex gap-4">
                         <button class="btn btn-outline flex-1 normal-case font-normal rounded-lg"> <span><i
                                     class="fa-regular fa-clone"></i></span>Copy</button>
-                        <button class="btn btn-success text-white flex-1 normal-case font-normal rounded-lg"> <span><i
-                                    class="fa-solid fa-phone"></i></span>Call</button>
+                        <button class="btn btn-success text-white flex-1 normal-case font-normal rounded-lg CallBtn">
+                            <span><i class="fa-solid fa-phone"></i></span>Call</button>
                     </div>
                 </div>
                 <!-- car8 -->
@@ -236,19 +248,19 @@
                                 <img src="./assets/emergency.png" alt="" class="h-6 w-6">
                             </div>
                             <button class="btn btn-ghost btn-circle btn-sm">
-                                <span><i class="fa-regular fa-heart"></i></span>
+                                <span><i class="fa-regular fa-heart" id="heart_BTN7"></i></span>
                             </button>
                         </div>
-                        <p class="font-semibold text-lg">Brac Helpline</p>
+                        <p class="font-semibold text-lg" id="NEN8">Brac Helpline</p>
                         <p class="text-gray-500 text-sm">Brac</p>
-                        <h2 class="text-4xl font-bold my-2">16445</h2>
+                        <h2 class="text-4xl font-bold my-2" id="Number8">16445</h2>
                         <div class="badge badge-outline mt-1">NGO</div>
                     </div>
                     <div class="mt-6 flex gap-4">
                         <button class="btn btn-outline flex-1 normal-case font-normal rounded-lg"> <span><i
                                     class="fa-regular fa-clone"></i></span>Copy</button>
-                        <button class="btn btn-success text-white flex-1 normal-case font-normal rounded-lg"> <span><i
-                                    class="fa-solid fa-phone"></i></span>Call</button>
+                        <button class="btn btn-success text-white flex-1 normal-case font-normal rounded-lg CallBtn">
+                            <span><i class="fa-solid fa-phone"></i></span>Call</button>
                     </div>
                 </div>
                 <!-- card9 -->
@@ -259,31 +271,32 @@
                                 <img src="./assets/emergency.png" alt="" class="h-6 w-6">
                             </div>
                             <button class="btn btn-ghost btn-circle btn-sm">
-                                <span><i class="fa-regular fa-heart"></i></span>
+                                <span><i class="fa-regular fa-heart" id="heart_BTN8"></i></span>
                             </button>
                         </div>
-                        <p class="font-semibold text-lg">Bangladesh Railway Helpline </p>
+                        <p class="font-semibold text-lg" id="NEN9">Bangladesh Railway Helpline </p>
                         <p class="text-gray-500 text-sm">Bangladesh Railway</p>
-                        <h2 class="text-4xl font-bold my-2">163 </h2>
+                        <h2 class="text-4xl font-bold my-2" id="Number9">163 </h2>
                         <div class="badge badge-outline mt-1">Travel</div>
                     </div>
                     <div class="mt-6 flex gap-4">
                         <button class="btn btn-outline flex-1 normal-case font-normal rounded-lg"> <span><i
                                     class="fa-regular fa-clone"></i></span>Copy</button>
-                        <button class="btn btn-success text-white flex-1 normal-case font-normal rounded-lg"> <span><i
-                                    class="fa-solid fa-phone"></i></span>Call</button>
+                        <button class="btn btn-success text-white flex-1 normal-case font-normal rounded-lg CallBtn">
+                            <span><i class="fa-solid fa-phone"></i></span>Call</button>
                     </div>
                 </div>
 
             </div>
             <!-- call history section  -->
-            <div class="w-full lg:max-w-xs xl:max-w-sm bg-white p-6 rounded-2xl h-fit">
+            <aside class="w-full lg:max-w-xs xl:max-w-sm bg-white p-6 rounded-2xl h-fit">
                 <div class="flex justify-between items-center mb-6">
                     <h3 class="font-bold text-lg flex items-center gap-2">
                         <span><i class="fa-regular fa-clock"></i></span>
                         Call History
                     </h3>
-                    <button class="btn btn-success btn-sm text-white normal-case font-medium">Clear</button>
+                    <button id="clearHistoryBtn"
+                        class="btn btn-success btn-sm text-white normal-case font-medium">Clear</button>
                 </div>
 
                 <div class="space-y-5">
@@ -315,22 +328,10 @@
                         </div>
                         <p class="text-gray-400 text-xs">11:36:58 AM</p>
                     </div>
-                    <div class="flex justify-between items-center text-sm">
-                        <div>
-                            <p class="font-semibold">Fire Service Number</p>
-                            <p class="text-gray-500">999</p>
-                        </div>
-                        <p class="text-gray-400 text-xs">11:36:58 AM</p>
-                    </div>
-                    <div class="flex justify-between items-center text-sm">
-                        <div>
-                            <p class="font-semibold">Anti-Corruption Helpline</p>
-                            <p class="text-gray-500">999</p>
-                        </div>
-                        <p class="text-gray-400 text-xs">11:36:58 AM</p>
-                    </div>
+
+
                 </div>
-            </div>
+            </aside>
         </div>
 
 
